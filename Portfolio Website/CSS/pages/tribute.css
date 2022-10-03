@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background-color: rgb(218, 218, 218);
+  color: rgb(44, 44, 44);
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#title {
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+#img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#image {
+  max-width: 100%;
+  height: auto;
+}
+li {
+  max-width: 45ch;
+  margin: 2rem auto;
+}

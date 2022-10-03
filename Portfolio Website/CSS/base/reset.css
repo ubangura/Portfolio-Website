@@ -1,0 +1,71 @@
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  letter-spacing: 0.025rem;
+}
+
+body {
+  background-color: var(--color-gray);
+}
+
+p {
+  font-weight: normal;
+  color: var(--color-secondary);
+}
+
+ol,
+ul {
+  list-style: none;
+  color: var(--color-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-orange);
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

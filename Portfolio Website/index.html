@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Unisa Bangura" />
+    <!-- Simple web pages shouldn't define an application-name -->
+    <!-- <meta name="application-name" content="Unisa Bangura Portfolio Website"/> -->
+    <meta
+      name="description"
+      content="Hi, I'm Unisa! I'm currently a freshman at the University of Maryland, College Park. My passion for software is found through creating web and desktop applications that people will love. I strive to develop the best service for customers and not just a product by valuing user feedback."
+    />
+    <meta
+      name="keywords"
+      content="Student, Software, Java, Python, HTML, CSS, Portfolio"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="./Images/favicon.ico" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/pages/index.css" />
+    <title>Unisa Bangura</title>
+  </head>
+  <body>
+    <!-- Remember to change the skip__link href attribute -->
+    <header>
+      <a href="#intro" class="skip__link">Skip to content</a>
+      <a class="nav__link--home" href="./index.html">
+        <img loading="lazy" src="./Images/favicon.ico" alt="logo" />
+        Unisa Bangura
+      </a>
+      <nav class="nav--menu">
+        <a class="nav__links" href="./about.html">About</a>
+        <a class="nav__links" href="./projects.html">Projects</a>
+        <a class="nav__links nav__btn btn--nav" href="./contact.html"
+          >Contact Me</a
+        >
+      </nav>
+      <button class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
+
+    <main id="main--content">
+      <section id="intro">
+        <h1>Hi, I'm Unisa!</h1>
+        <p class="intro--bio">
+          I'm currently a freshman at the
+          <a target="_blank" href="https://www.umd.edu/"
+            >University of Maryland, College Park</a
+          >.
+          <br />
+          <br />
+          My passion for software is found through creating web and desktop
+          applications that people will love. I strive to develop the best
+          service for customers and not just a product by valuing user feedback.
+        </p>
+        <a class="intro__btn btn--primary" href="#projects">My Projects</a>
+        <img
+          loading="lazy"
+          class="intro__img"
+          src="./Images/wave.png"
+          alt="Hand waving"
+        />
+      </section>
+      <section id="languages">
+        <h2 id="language-section__header">Languages</h2>
+        <article class="carousel" data-carousel>
+          <button class="carousel__btn prev" data-carousel__btn="prev">
+            &#129144;
+          </button>
+          <article class="slide-ctn" data-slides>
+            <article class="slide fade--slide" data-active>
+              <img
+                loading="lazy"
+                class="slide__img"
+                src="./Images/python_logo.png"
+                alt="Python logo"
+              />
+              <h3 class="slide__header">Python</h3>
+              <ul class="slide__concepts">
+                <li>String Manipulation</li>
+                <li>Exception Handling</li>
+                <li>File Processing</li>
+              </ul>
+              <a
+                class="slide__btn btn--secondary"
+                href="./projects.html#python__header"
+                >See Python Projects</a
+              >
+            </article>
+            <article class="slide fade--slide">
+              <img
+                loading="lazy"
+                class="slide__img"
+                src="./Images/html_css_logo.png"
+                alt="HTML and CSS logos"
+              />
+              <h3 class="slide__header">HTML & CSS</h3>
+              <ul class="slide__concepts">
+                <li>Semantic HTML</li>
+                <li>Flexbox</li>
+                <li>Animations</li>
+                <li>Grid</li>
+                <li>Responsive Design</li>
+              </ul>
+              <a
+                class="slide__btn btn--secondary"
+                href="./projects.html#web-dev__header"
+                >See Web Dev Projects</a
+              >
+            </article>
+            <article class="slide fade--slide">
+              <img
+                loading="lazy"
+                class="slide__img"
+                src="./Images/java_logo.png"
+                alt="Java logo"
+              />
+              <h3 class="slide__header">Java</h3>
+              <ul class="slide__concepts">
+                <li>Sorting/Searching Algorithms</li>
+                <li>Classes</li>
+                <li>Arrays, ArrayList, 2D Arrays</li>
+                <li>Inheritance</li>
+                <li>Recursion</li>
+                <li>String Manipulation</li>
+              </ul>
+              <a
+                class="slide__btn btn--secondary"
+                href="./projects.html#java__header"
+                >See Java Projects</a
+              >
+            </article>
+          </article>
+          <button class="carousel__btn next" data-carousel__btn="next">
+            &#129146;
+          </button>
+        </article>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>A collection of my recent work:</p>
+        <article class="projects__flex">
+          <article class="project1">
+            <div class="overlay">
+              <h3 class="project__title">Tribute Page</h3>
+              <a
+                target="_blank"
+                href="./tribute.html"
+                class="overlay__btn btn--secondary"
+                >See Project</a
+              >
+            </div>
+          </article>
+
+          <article class="project2">
+            <div class="overlay">
+              <h3 class="project__title">Survey Form</h3>
+              <a
+                target="_blank"
+                href="./survey.html"
+                class="overlay__btn btn--secondary"
+                >See Project</a
+              >
+            </div>
+          </article>
+
+          <article class="project3">
+            <div class="overlay">
+              <h3 class="project__title">Product Landing Page</h3>
+              <a
+                target="_blank"
+                href="./product_landing_page.html"
+                class="overlay__btn btn--secondary"
+                >See Project</a
+              >
+            </div>
+          </article>
+
+          <article class="project4">
+            <div class="overlay">
+              <h3 class="project__title">Technical Documentation Page</h3>
+              <a
+                target="_blank"
+                href="./technical_documentation.html"
+                class="overlay__btn btn--secondary"
+                >See Project</a
+              >
+            </div>
+          </article>
+        </article>
+        <a class="projects__btn btn--secondary" href="./projects.html"
+          >See all projects</a
+        >
+      </section>
+      <section id="about">
+        <article class="about--bio">
+          <h2>About Me</h2>
+          <p class="about--text">
+            Hi! Let me tell you a little bit about myself. I've always been
+            proactive about my passion for programming. I first discovered my
+            passion while taking AP Computer Science A in 10th grade. Since
+            then, my focus is learning. What I love about computer science is
+            how interconnected the discipline is. I love the challenge of
+            understanding the concepts I learned and combining them to problem
+            solve. I love the idea of making a product that people worldwide
+            could benefit from for years. Computer science is human-centered,
+            and building computer software is an opportunity to serve others,
+            which is how I want to apply my skills.
+            <br />
+            <br />
+            I enjoy playing my favorite video games, watching soccer, practicing
+            chess, and honing my cooking skills when I'm not studying.
+          </p>
+          <a
+            target="_blank"
+            class="about__btn btn--primary"
+            href="./Unisa Bangura Resume.pdf"
+            >Resume</a
+          >
+        </article>
+        <article class="about--contact">
+          <img
+            loading="lazy"
+            class="about__img"
+            src="./Images/headshot.png"
+            alt="Headshot of Unisa Bangura"
+          />
+          <h2 class="contact__header">Get in touch</h2>
+          <address class="about__links">
+            <a href="mailto:ubangura92@gmail.com"
+              ><img loading="lazy" src="./Images/mail.png" alt="Mail icon"
+            /></a>
+            <a target="_blank" href="https://github.com/ubangura"
+              ><img loading="lazy" src="./Images/github.png" alt="GitHub logo"
+            /></a>
+          </address>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <h3 class="footer__header">What I'm currently working on:</h3>
+      <img
+        loading="lazy"
+        class="footer__img"
+        src="./Images/footer__img.png"
+        alt="Scientific Computing with Python"
+      />
+      <p class="footer__text">Reach out to me</p>
+      <address class="footer__address">
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://github.com/ubangura"
+          >GitHub</a
+        >
+        <a class="footer__link" href="mailto:ubangura92@gmail.com">Email</a>
+      </address>
+    </footer>
+    <script src="./header.js"></script>
+    <script src="carousel.js" defer></script>
+  </body>
+</html>

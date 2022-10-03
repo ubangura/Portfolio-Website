@@ -1,0 +1,35 @@
+.btn--nav {
+  color: var(--color-gray);
+  background: var(--color-secondary);
+  border-radius: 31.25rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.btn--primary,
+.btn--secondary {
+  color: #fff;
+  font-weight: normal;
+  border-radius: 31.25rem;
+  padding: 0.875rem 2.125rem;
+}
+
+.btn--primary {
+  background: var(--color-secondary);
+  transition: all 0.25s;
+}
+
+.btn--primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn--secondary {
+  background: transparent;
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-color: var(--color-secondary);
+  transition: all 0.25s;
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-secondary);
+}

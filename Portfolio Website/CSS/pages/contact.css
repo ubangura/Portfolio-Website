@@ -1,0 +1,66 @@
+main {
+    display: grid;
+    grid-template:
+        "form" auto / minmax(3rem, 1fr);
+}
+
+#main--content {
+    text-align: center;
+}
+
+#form {
+    grid-area: form;
+    justify-self: center;
+}
+
+h2 {
+    padding-top: 3.75rem;
+    padding-bottom: 1rem;
+}
+
+p {
+    padding-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    padding-top: 2rem;
+}
+
+#name,
+#email,
+#message {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+#submit {
+    cursor: pointer;
+    color: #fff;
+    padding: 0.875rem 2.125rem;
+    background: var(--color-secondary);
+    transition: all 0.25s;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+#submit:hover {
+    background-color: var(--color-primary-dark);
+}
+
+@media screen and (max-width: 500px) {
+    #form {
+        justify-self: auto;
+    }
+
+    form {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

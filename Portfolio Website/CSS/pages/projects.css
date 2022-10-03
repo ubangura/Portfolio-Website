@@ -1,0 +1,133 @@
+main {
+    display: grid;
+    grid-template:
+        ". projects ." auto/ 1fr 4fr 1fr;
+    gap: 1rem;
+}
+
+#projects {
+    grid-area: projects;
+    text-align: center;
+    padding-top: 3.75rem;
+    padding-left: 3rem;
+    padding-bottom: 10rem;
+}
+
+#web-dev,
+#python,
+#java {
+    padding-top: 2rem;
+}
+
+.projects__flex {
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3.75rem;
+}
+
+.project1,
+.project2,
+.project3,
+.project4 {
+    height: 18.75rem;
+    flex-basis: 48%;
+    border-radius: 1rem;
+    background-position: top;
+    background-size: cover;
+}
+
+.project1 {
+    background-image: url(/Images/tribute_img.png);
+}
+
+.project2 {
+    background-image: url(/Images/survey_img.png);
+}
+
+.project3 {
+    background-image: url(/Images/product_landing_page_img.png);
+}
+
+.project4 {
+    background-image: url(/Images/technical_documentation_img.png);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.overlay>* {
+    transform: translateY(1rem);
+    transition: transform 0.25s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* When a user tabs to an .overlay__btn the overlay becomes visible */
+.overlay:focus-within {
+    opacity: 1;
+}
+
+.overlay:hover>* {
+    transform: translateY(0);
+}
+
+.overlay__btn {
+    padding: 0.625rem 1.5rem;
+}
+
+.project__title {
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.375rem;
+}
+
+@media screen and (max-width: 96rem) {
+    #projects {
+        padding-left: 0rem;
+    }
+}
+
+@media screen and (max-width: 62.5rem) {
+    main {
+        grid-template:
+            "projects" auto / 1fr;
+    }
+
+    #projects {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .overlay {
+        opacity: 1;
+    }
+
+    .overlay>* {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 35rem) {
+
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/pages/product_landing_page.css" />
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header id="header">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/4617/4617727.png"
+        alt=""
+        id="header-img"
+      />
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#product">How It Works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- TITLE/SUBTITLE -->
+    <h1>Original Keyboards</h1>
+    <h2 id="subtitle">Creative, precisely-made masterpieces</h2>
+
+    <!-- FORM -->
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+      <label for="email" id="email-label">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email address"
+      />
+      <br />
+      <input type="submit" name="email" value="Submit" id="submit" />
+    </form>
+
+    <!-- Features -->
+    <section id="features">
+      <article class="feature-grid">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4176/4176643.png"
+          alt=""
+          class="feature-img"
+        />
+        <h3 class="feature-title">Premium Materials</h3>
+        <p class="feature-description">
+          Our keyboards use the shiniest metal which is sourced locally. This
+          will increase the longevity of your purchase.
+        </p>
+      </article>
+      <article class="feature-grid">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/931/931793.png"
+          alt=""
+          class="feature-img"
+        />
+        <h3 class="feature-title">Quality Assurance</h3>
+        <p class="feature-description">
+          For every purchase you make, we will ensure there are no damages or
+          faults and we will check and test the responsiveness of your keyboard.
+        </p>
+      </article>
+      <article class="feature-grid">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3231/3231941.png"
+          alt=""
+          class="feature-img"
+        />
+        <h3 class="feature-title">Fast Shipping</h3>
+        <p class="feature-description">
+          We make sure you recieve your keyboard as soon as we have finished
+          making it. We also provide free returns if you are not satisfied.
+        </p>
+      </article>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="product">
+      <iframe
+        id="video"
+        width="100%"
+        height="100%"
+        src="https://www.youtube-nocookie.com/embed/Qr3nYR15wxU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <article class="card">
+        <h4 class="card-title">Keychron TKL</h4>
+        <p class="card-price">$80</p>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+          deserunt.
+        </p>
+        <button class="buy-btn"><a href="#">Buy</a></button>
+      </article>
+      <article class="card">
+        <h4 class="card-title">Apex Pro</h4>
+        <p class="card-price">$130</p>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+          deserunt.
+        </p>
+        <button class="buy-btn"><a href="#">Buy</a></button>
+      </article>
+      <article class="card">
+        <h4 class="card-title">Champion G1 Ultra</h4>
+        <p class="card-price">$200</p>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+          deserunt.
+        </p>
+        <button class="buy-btn"><a href="#">Buy</a></button>
+      </article>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <ul>
+        <a class="footer-link" href="#">Privacy</a>
+        <a class="footer-link" href="#">Terms</a>
+        <a class="footer-link" href="#">Contact</a>
+      </ul>
+      <p class="copyright">Original Keyboards &copy; 2022</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Unisa Bangura" />
+    <meta
+      name="description"
+      content="Hi, I'm Unisa! I'm currently a freshman at the University of Maryland, College Park. My passion for software is found through creating web and desktop applications that people will love. I strive to develop the best service for customers and not just a product by valuing user feedback."
+    />
+    <meta
+      name="keywords"
+      content="Student, Software, Java, Python, HTML, CSS, Portfolio"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="./Images/favicon.ico" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/pages/contact.css" />
+    <title>Unisa Bangura - Contact</title>
+  </head>
+  <body>
+    <!-- Remember to change the skip__link href attribute -->
+    <header>
+      <a href="#main--content" class="skip__link">Skip to content</a>
+      <a class="nav__link--home" href="./index.html">
+        <img loading="lazy" src="./Images/favicon.ico" alt="logo" />
+        Unisa Bangura
+      </a>
+      <nav class="nav--menu">
+        <a class="nav__links" href="./about.html">About</a>
+        <a class="nav__links" href="./projects.html">Projects</a>
+        <a class="nav__links nav__btn btn--nav" href="./contact.html"
+          >Contact Me</a
+        >
+      </nav>
+      <button class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
+
+    <main id="main--content">
+      <section id="form">
+        <h2>Contact me!</h2>
+        <p>I'd love to hear from you.</p>
+        <form name="contact" action="" netlify>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            autocomplete="on"
+            autofocus
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            autocomplete="on"
+            required
+          />
+
+          <label for="message">Enter your message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="35"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+
+          <button type="submit" id="submit">SEND</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h3 class="footer__header">What I'm currently working on:</h3>
+      <img
+        loading="lazy"
+        class="footer__img"
+        src="./Images/footer__img.png"
+        alt="Scientific Computing with Python"
+      />
+      <p class="footer__text">Reach out to me</p>
+      <address class="footer__address">
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://github.com/ubangura"
+          >GitHub</a
+        >
+        <a class="footer__link" href="mailto:ubangura92@gmail.com">Email</a>
+      </address>
+    </footer>
+    <script src="./header.js"></script>
+  </body>
+</html>

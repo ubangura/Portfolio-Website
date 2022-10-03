@@ -1,0 +1,9 @@
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    font-weight: normal;
+    border: none;
+    border-radius: 2rem;
+}

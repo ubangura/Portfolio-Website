@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@700&family=Poppins&display=swap");
+body {
+  margin: 0;
+  background-color: rgb(212, 209, 209);
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template:
+    "nav nav nav" auto
+    ". title ." auto
+    ". subtitle ." auto
+    ". form ." auto
+    ". features ." auto
+    ". video ." auto
+    ". pricing ." auto
+    ". footer ." auto / 2fr minmax(18.125rem, 4fr) 2fr;
+  gap: 1rem;
+}
+/* NAVBAR STYLES START */
+#header {
+  background-color: rgb(212, 209, 209);
+  display: grid;
+  grid-template: "img nav" auto / 1fr 2fr;
+  align-items: center;
+  position: sticky;
+  top: 0rem;
+  grid-area: nav;
+}
+#header-img {
+  grid-area: img;
+  max-width: 6.25rem;
+  height: auto;
+  justify-self: center;
+}
+#nav-bar {
+  grid-area: nav;
+}
+#nav-bar ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+#nav-bar li {
+  list-style-type: none;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 31.1875rem) {
+  #nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #nav-bar li {
+    margin-top: 0.5rem;
+  }
+}
+/* NAVBAR STYLES END */
+
+/* TITLES STYLES START */
+h1 {
+  grid-area: title;
+  text-align: center;
+  margin: 0;
+}
+#subtitle {
+  grid-area: subtitle;
+  text-align: center;
+  margin: 0;
+  font-weight: lighter;
+}
+/* TITLES STYLES END */
+
+/* FORM STYLES START */
+#form {
+  grid-area: form;
+  text-align: center;
+}
+#submit {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.2rem;
+  background-color: goldenrod;
+}
+#submit:hover {
+  cursor: pointer;
+}
+/* FORM STYLES END */
+
+/* FEATURES STYLES START */
+#features {
+  grid-area: features;
+}
+.feature-grid {
+  display: grid;
+  margin-top: 3rem;
+  grid-template:
+    "img title" auto
+    "img description" auto / 1fr 2fr;
+  gap: 0.2rem;
+}
+.feature-img {
+  grid-area: img;
+  max-width: 6.25rem;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+}
+.feature-title {
+  grid-area: title;
+  justify-self: start;
+  margin: 0;
+}
+.feature-description {
+  grid-area: description;
+  align-self: end;
+  margin: 0;
+}
+/* FEATURES STYLES END */
+
+/* Video STYLES START */
+#product {
+  grid-area: video;
+  margin-top: 1rem;
+}
+#video {
+  aspect-ratio: 16/9;
+}
+/* VIDEO STYLES END */
+
+/* PRICING STYLES START */
+#pricing {
+  grid-area: pricing;
+  margin-top: 2rem;
+  display: flex;
+}
+.card {
+  display: grid;
+  grid-template:
+    "title" auto
+    "price" auto
+    "description" auto
+    "buy" auto / 1fr;
+  justify-content: center;
+  border: 0.0625rem solid black;
+  border-radius: 0.3125rem;
+  margin: 0.1rem;
+}
+.card-title {
+  grid-area: title;
+  text-align: center;
+  justify-self: stretch;
+  margin: 0;
+  padding: 0.5rem 0;
+  background-color: rgb(189, 187, 187);
+}
+.card-price {
+  grid-area: price;
+  justify-self: center;
+  font-weight: bold;
+}
+.card-description {
+  grid-area: description;
+  text-align: center;
+}
+.buy-btn {
+  grid-area: buy;
+  justify-self: center;
+  width: 50%;
+  margin-bottom: 1rem;
+  background-color: goldenrod;
+}
+.buy-btn a {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+/* PRICING STYLES END */
+
+/* FOOTER STYLES START */
+#footer {
+  grid-area: footer;
+  background-color: rgb(189, 187, 187);
+}
+#footer ul {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+}
+.footer-link {
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  padding: 1rem;
+}
+.copyright {
+  margin: 0 0 0.5rem 0;
+  color: rgb(88, 88, 88);
+  text-align: right;
+  margin-right: 1rem;
+}
+/* FOOTER STYLES END */
+
+@media screen and (max-width: 62.4375rem) {
+  #header {
+    display: grid;
+    grid-template:
+      "img" auto
+      "nav" auto / 1fr;
+  }
+  .feature-grid {
+    margin-top: 3rem;
+    grid-template:
+      "img" auto
+      "title" auto
+      "description" auto/ 1fr;
+    gap: 0.2rem;
+  }
+  #pricing {
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+  .card {
+    margin-top: 0.5rem;
+  }
+}

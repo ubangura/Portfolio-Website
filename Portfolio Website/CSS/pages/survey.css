@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@700&family=Poppins&display=swap");
+body {
+  margin: 0;
+  background-image: url(https://images5.alphacoders.com/912/912044.jpg);
+  color: ivory;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  /* grid-template-rows: auto auto;
+        grid-template-columns: 1fr minmax(6.25rem, 4fr) 1fr;
+        grid-template-areas:
+          "header header header"
+          ". form ."; */
+  grid-template:
+    "header header header" auto
+    ". form ." auto / 1fr minmax(18rem, 4fr) 1fr;
+  grid-row-gap: 1rem;
+}
+header {
+  grid-area: header;
+}
+#title {
+  font-weight: lighter;
+  text-align: center;
+}
+#description {
+  font-size: 1rem;
+  text-align: center;
+}
+#survey-form {
+  background-color: rgba(32, 32, 32, 0.5);
+  border-radius: 0.3125rem;
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+#name-label {
+  margin-bottom: 0.3rem;
+}
+#email-label,
+#number-label,
+#comments-label,
+#radio-label,
+#checkbox-label,
+.dropdown-label {
+  margin: 1rem 0 0.3rem 0;
+}
+::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+input,
+select,
+textarea {
+  padding: 0.3rem;
+  border-radius: 0.3125rem;
+}
+select {
+  font-family: "Poppins", sans-serif;
+}
+button {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border-radius: 0.3125rem;
+  background-color: rgb(121, 180, 2);
+  color: ivory;
+}
